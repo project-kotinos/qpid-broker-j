@@ -8,7 +8,7 @@ build_targets:
     container:
       image: yourbase/yb_ubuntu:18.04
     commands:
-      - mvn verify -Pjava-dby.0-9 -DenableAmqp0-x
+      - mvn verify -Pjava-bdb.1-0  -DskipITs=false
 
 ci:
   builds:
