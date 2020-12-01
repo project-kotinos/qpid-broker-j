@@ -6,7 +6,7 @@ dependencies:
 build_targets:
   - name: default
     container:
-      image: yb_ubuntu_yb-user:latest
+      image: yb_ubuntu_yb-user:18.04
     commands:
       - mvn verify -Pjava-bdb.1-0 -DskipITs=false
 
