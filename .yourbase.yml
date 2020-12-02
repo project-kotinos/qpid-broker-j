@@ -7,7 +7,7 @@ build_targets:
   - name: default
     container:
       image: yb_ubuntu_yb-user:18.04
-      workdir: /home/yb-user
+      workdir: /home/yb-user/workspace
     commands:
       - whoami
       - mvn verify -Pjava-bdb.1-0 -DskipITs=false
