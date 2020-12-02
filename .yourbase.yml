@@ -9,6 +9,7 @@ build_targets:
       image: yb_ubuntu_yb-user:18.04
       workdir: /home/yb-user
     commands:
+      - whoami
       - mvn verify -Pjava-bdb.1-0 -DskipITs=false
 
 ci:
