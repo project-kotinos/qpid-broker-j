@@ -6,7 +6,7 @@ dependencies:
 build_targets:
   - name: default
     container:
-      image: yb_ubuntu:18.04-nonroot
+      image: yourbase/yb_ubuntu:18.04-nonroot
       workdir: /home/yb-user/workspace
     commands:
       - whoami
